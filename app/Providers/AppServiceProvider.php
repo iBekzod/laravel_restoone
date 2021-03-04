@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
         //
         Schema::defaultStringLength(191);
         try {
-
+            //\App::setLocale('uz');
             config(['mail.driver' => setting('mail_driver', 'smtp')]);
             config(['mail.host' => setting('mail_host', 'smtp.mailgun.org')]);
             config(['mail.port' => setting('mail_port', 587)]);
